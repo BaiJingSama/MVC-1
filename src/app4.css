@@ -1,0 +1,24 @@
+#app4 {}
+
+@keyframes colorChange {
+    0% {
+        background: red;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+#app4 .circle {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border: 1px solid red;
+
+}
+
+#app4 .circle.active {
+    animation: colorChange 1s infinite alternate linear;
+    /* alternate 来回动画 */
+}
